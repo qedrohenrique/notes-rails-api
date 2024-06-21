@@ -16,7 +16,6 @@ class NotesController < ApplicationController
 
   # POST /notes
   def create
-    binding.pry
     @note = Note.new(note_params)
 
     if @note.save
